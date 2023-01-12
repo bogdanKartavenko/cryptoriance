@@ -1,0 +1,43 @@
+@use 'utils' as u;
+
+.navigation {
+    min-height: 72px;
+    padding: 0 66px;
+    @include u.flex (space-between, center);
+    margin-bottom: 178px;
+
+    &__menu {
+        position: relative;
+        z-index: 50;
+        max-width: 182px;
+        width: 100%;
+        @include u.flex(space-between, stretch, row, wrap)
+    }
+    &__item {
+        @include u.flex(flex-start, center);
+    }
+    &__link {
+        text-decoration: none;
+        @include u.text(14px, 400, u.$color-white, 17px);
+        padding: 1px;
+        &:hover {
+            color: u.$color-blue;
+            transition: 0.5s;
+        }
+        &:focus {
+            outline: 1px solid #0077E2;
+            border-radius: 5px;
+        }
+    }
+
+}
+
+@include u.media('desktop', max) {
+    .navigation {
+        padding: 0 16px;
+        margin-bottom: 42px;
+        &__menu {
+            display: none;
+        }
+    }
+}

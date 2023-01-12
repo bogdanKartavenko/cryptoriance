@@ -1,0 +1,37 @@
+@use 'utils' as u;
+
+.footer {
+    background-color: u.$color-bg;
+    margin-bottom: 0;
+    @include u.flex (space-between, center, row, wrap);
+    &__list {
+        max-width: 416px;
+        width: 100%;
+    }
+    &__link {
+        @include u.text(14px, 400, u.$color-white, 17px);
+        text-decoration: none;
+    }
+    &__data {
+        @include u.text(14px, 400, u.$color-grayDark, 17px);
+    }
+}
+
+@include u.media('tablet', max) {
+    .footer {
+        @include u.flex (center, center, row, wrap);
+        padding-top: 39px;
+        &__logo {
+            @include u.margin-auto;
+            margin-bottom: 32px;
+        }
+        &__list {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 40px;
+        }
+        &__item {
+            margin-bottom: 8px;
+        }
+    }
+}
