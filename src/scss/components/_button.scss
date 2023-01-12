@@ -1,0 +1,46 @@
+@use 'utils' as u;
+
+.button {
+    border: none;
+}
+
+.button__after {
+    padding: 7px 16px;
+    background-color: u.$color-bg;
+    border-radius: 7px;
+    @include u.border(u.$color-white);
+    @include u.text(14px, 400, u.$color-white, 17px);
+    &:hover {
+        transition: 0.5s;
+        @include u.border(u.$color-blue);
+        color: u.$color-blue;
+    }
+    &:focus {
+        @include u.border(u.$color-blue);
+    }
+}
+
+.button__befor {
+    @include u.text(16px, 400, u.$color-white, 19px);
+    border: none;
+    height: 48px;
+    background-color: u.$color-blue;
+    border-radius: 7px;
+    &:hover {
+        transition: 0.5s;
+        background-color: u.$color-blueDark
+    }
+    &:focus {
+        outline: 1px solid u.$color-white;
+    }
+}
+
+.header__button {
+    position: relative;
+    @include u.flex(space-around, center);
+    padding: 14px 22px 14px 22px;
+}
+
+.img__arrow {
+    margin-left: 16px;
+}

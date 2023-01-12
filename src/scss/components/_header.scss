@@ -1,0 +1,112 @@
+@use 'utils'as u;
+
+.header {
+    min-height: 100vh;
+    background-color: u.$color-bg;
+    outline: none;
+
+    &__title {
+        margin-bottom: 32px;
+    }
+
+    &__text {
+        max-width: 392px;
+        margin-bottom: 50px;
+        padding: 2px;
+    }
+
+    &__img {
+        position: absolute;
+    }
+
+    &__img--BG {
+        width: 100%;
+        bottom: 0;
+        z-index: 2;
+    }
+
+    &__img--window {
+        top: 156px;
+        right: 0;
+        z-index: 3;
+    }
+
+    &__img--shade {
+        top: 126px;
+        right: 0;
+        z-index: 1;
+    }
+
+    &__img--bitcoin {
+        top: 506px;
+        right: 425px;
+        z-index: 4;
+    }
+    &__img--window2,
+    &__img--shade2,
+    &__img--bitcoin2 {
+        opacity: 0
+    }
+}
+
+@include u.media('desktop', max) {
+    .header {
+        padding-bottom: 541px;
+
+        &__title {
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 33px;
+            margin-bottom: 24px;
+        }
+
+        &__text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 160%;
+            margin-bottom: 48px;
+        }
+
+        &__img--BG {
+            height: 237px;
+            bottom: 0;
+            z-index: 2;
+        }
+
+        &__img--window {
+            display: none;
+        }
+
+        &__img--window2 {
+            opacity: 10;
+            height: 286px;
+            top: 459px;
+            right: 0;
+            z-index: 3;
+        }
+
+        &__img--shade {
+            display: none;
+        }
+
+        &__img--shade2 {
+            opacity: 10;
+            height: 287px;
+            top: 443px;
+            right: 0;
+            z-index: 1;
+        }
+
+        &__img--bitcoin {
+            display: none;
+        }
+
+        &__img--bitcoin2 {
+            opacity: 10;
+            height: 35px;
+            top: 656px;
+            right: 129px;
+            z-index: 4;
+        }
+    }
+}

@@ -1,16 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Parcel by Merge</title>
-    <link rel="stylesheet" href="./scss/style.scss" />
-  </head>
-  <body>
-    <div class="container index-page">
-      <h1 class="title index-page__title">Parcel by Merge</h1>
-      <a href="https://merge.rocks" target="_blank" class="cover">
-        <img src="./assets/images/cover.png" alt="merge" />
-      </a>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="scss/style.scss">
+  <title>Cryptoriance</title>
+</head>
+
+<body>
+  <div class="header">
+    <nav class="navigation">
+      <a href="#"><img class="navigation__logo" src="/src/assets/images/Logo.png" alt="Logo"></a>
+      <ul class="navigation__menu header__nav">
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Log in</a>
+        </li>
+        <li class="navigation__item">
+          <button class="navigation__button button__after">Get started</button>
+        </li>
+      </ul>
+      <div class="burger">
+        <input class="burger__checkbox" type="checkbox" id="toggle">
+        <label class="burger__btn" for="toggle">
+          <span class="burger__border"></span>
+        </label>
+        <ul class="burger__list">
+          <li class="burger__item">
+            <a class="burger__link" href="#">Features</a></li>
+          <li class="burger__item">
+            <a class="burger__link" href="#">Testimonials</a>
+          </li>
+          <li class="burger__item">
+            <a class="burger__link" href="#">News</a>
+          </li>
+          <li class="burger__item">
+            <a class="burger__link" href="#">Privacy Policy</a>
+          </li>
+          <li class="burger__item">
+            <a class="burger__link" href="#">Terms of Use</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="header__wrapper wrapper">
+      <div class="header__box box">
+        <h1 class="header__title title">Be the part of revolution</h1>
+        <div class="header__text text">Join the worlds most comprehensive and secure trading platform. Buy and sell
+          Bitcoin, Ethereum, XRP and many other cryptocurrencies with fiat or crypto.</div>
+        <button class="button header__button button__befor">Get started now <img class="img__arrow"
+            src="assets/svg/arrow.svg" alt=""></button>
+      </div>
     </div>
-  </body>
+    <img class="header__img header__img--BG" src="/src/assets/images/BG_header.png" alt="bg">
+    <img class="header__img header__img--window" src="/src/assets/images/header_window.png" alt="window">
+    <img class="header__img header__img--shade" src="/src/assets/images/header_shade.png" alt="shade">
+    <img class="header__img header__img--bitcoin" src="/src/assets/images/Bitcoin.png" alt="bitcoin">
+    <img class="header__img header__img--bitcoin2" src="/src/assets/images/bitcoin2.png" alt="">
+    <img class="header__img header__img--window2" src="/src/assets/images/window.png" alt="">
+    <img class="header__img header__img--shade2" src="/src/assets/images/shade.png" alt="">
+  </div>
+  <div class="main">
+    <span class="lead main__lead">Features</span>
+    <span class="main__title title">Every revolution needs a leader</span>
+    <ul class="main__list list">
+      <li class="main__item list__item">
+        <img class="main__img" src="/src/assets/images/lock.png" alt="lock">
+        <div class="main__caption caption">Security first</div>
+        <div class="text main__text">When choosing an exchange,
+          trust matters. That’s why security
+          has been and will always be our
+          top consideration.</div>
+      </li>
+      <li class="main__item list__item">
+        <img class="main__img" src="/src/assets/images/compass.png" alt="compass">
+        <div class="main__caption caption">Ease</div>
+        <div class="text main__text">The app is as easy to use as possible, so it has never been easier to perform
+          transactions.</div>
+      </li>
+      <li class="main__item list__item">
+        <img class="main__img" src="/src/assets/images/Shield.png" alt="Shield">
+        <div class="main__caption caption">Fast, robust technology</div>
+        <div class="text main__text">Our trading engine was custom-built
+          for scale and speed to facilitate
+          real-time order execution under
+          heavy demand.</div>
+      </li>
+    </ul>
+  </div>
+  <div class="features">
+    <div class="wrapper features__wrapper">
+      <div class="features__box">
+        <div class="features__title title">Cryptorio is easy and straightforward</div>
+        <div class="features__desc desc">We value our customers very much, so we made the application as easy to
+          understand and easy to use as possible. In a short time, you can become a professional level specialist</div>
+        <a href="" class="features__swap swap">Go to swap now <img class="features__arrow"
+            src="/src/assets/svg/arrow.svg" alt=""></a>
+      </div>
+        <img class="features__img" src="/src/assets/images/features.png" alt="img">
+    </div>
+  </div>
+  <div class="revolution">
+    <div class="wrapper revolution__wrapper">
+      <img class="revolution__img" src="/src/assets/images/revolution.png" alt="">
+      <!-- <div class="card revolution__card">
+        <form class="form card__form">
+          <div class="radio">
+            <input class="radio__input" type="radio" id="buy" name="filter">
+            <label class="radio__label card__text" for="buy">Buy</label>
+            <input class="radio__input" type="radio" id="sell" name="filter">
+            <label class="radio__label card__text" for="sell">Sell</label>
+            <input class="radio__input" type="radio" id="swap" name="filter">
+            <label class="radio__label card__text" for="swap">Swap</label>
+          </div>
+          <div class="card__box">
+            <label class="card__text" for="spend">Spend</label>
+            <input class="card__input" type="text" required maxlength="10" id="spend">
+            <input class="card__checkbox" type="checkbox">
+          </div>
+          <div class="card__box">
+            <div class="label__box">
+              <label class="card__text" for="receive">Receive</label>
+              <div class="card__text--btc">1 BTC = <span class="card__text--price">40,203.69 EUR</span></div>
+            </div>
+            <input class="card__input" type="text" required maxlength="10" id="receive">
+            <input class="card__checkbox" type="checkbox">
+          </div>
+          <div class="card__price">
+            <span class="card__free">Free <img src="/src/assets/images/Union.png" alt="union"></span>
+            <span class="card__usd">1.00 USD</span>
+          </div>
+          <button class="button__befor card__button">Connect Wallet</button>
+        </form>
+      </div> -->
+      <div class="revolution__box">
+        <div class="revolution__title title">Now a new revolution is starting called DeFi</div>
+        <div class="revolution__desc desc">Most of the existing DeFi are built on the Ethereum blockchain and the number
+          of new applications in the field of decentralized finance is steadily growing. So, in early February, the
+          number of Ethereum blocked on smart contracts for DeFi applications reached $ 938.</div>
+        <a href="#" class="revolution__swap swap">Let`s try now <img src="/src/assets/svg/arrow.svg" alt="arrow"></a>
+      </div>
+    </div>
+  </div>
+  <div class="promo">
+    <div class="promo__wrapper wrapper">
+      <div class="promo__box box">
+        <div class="promo__title title">Try to swap easily and quickly crypto like a PRO</div>
+        <div class="promo__desc desc">
+          Cryptorio has the ability to launch new pools as it is an automated market maker that can utilize smart
+          routing and can give its clients the best swapping rates, slippage and price impact that is avialable.
+        </div>
+        <a href="#" class="promo__swap swap">Go to swap now <img src="/src/assets/svg/arrow.svg" alt=""></a>
+      </div>
+      <img class="promo__img" src="/src/assets/images/promo.png" alt="promoImg">
+    </div>
+  </div>
+  <div class="gallery">
+    <span class="gallery__lead lead ">Powerful tools</span>
+    <span class="gallery__title title">Trade with confidence</span>
+    <span class="gallery__text text">Trade our spot and margin markets with advanced funding options, lightning fast
+      execution and deep liquidity.</span>
+    <form class="gallery__form">
+      <div class="gallery__box">
+        <label class="gallery__label" for="key">Key features</label>
+        <input class="gallery__radio" type="radio" id="key" name="gallery">
+        <div class="gallery__border"></div>
+      </div>
+      <div class="gallery__box">
+        <label class="gallery__label" for="asset">Asset classes</label>
+        <input class="gallery__radio" type="radio" id="asset" name="gallery">
+        <div class="gallery__border"></div>
+      </div>
+      <div class="gallery__box">
+        <label class="gallery__label" for="iterface">Interface</label>
+        <input class="gallery__radio" type="radio" id="iterface" name="gallery">
+        <div class="gallery__border"></div>
+      </div>
+    </form>
+    <img class="gallery__img" src="/src/assets/images/gallery1.png" alt="img">
+  </div>
+  <div class="clients">
+    <span class="clients__title title">We are only as good, as our clients say we are</span>
+    <ul class="clients__wrapper comments">
+      <li class="comments__list">
+        <img class="comments__img" src="/src/assets/images/clients1.png" alt="img">
+        <div class="comments__box">
+          <div class="comments__box--name">
+            <span class="comments__name">Kautilya Reddy</span>
+            <a class="comments__link" href="#">@reddyzzz</a>
+          </div>
+          <p class="comments__text">Loved the onboarding experience!... As soon as I signed up...I got a call regarding
+            my verification procedure, which was also swiftly taken care of. I then received a call to take me around
+            the interface.</p>
+        </div>
+      </li>
+      <li class="comments__list">
+        <img class="comments__img" src="/src/assets/images/clients2.png" alt="img">
+        <div class="comments__box">
+          <div class="comments__box--name">
+            <span class="comments__name">Kautilya Reddy</span>
+            <a class="comments__link" href="#">@reddyzzz</a>
+          </div>
+          <p class="comments__text">Loved the onboarding experience!... As soon as I signed up...I got a call regarding
+            my verification procedure, which was also swiftly taken care of. I then received a call to take me around
+            the interface.</p>
+        </div>
+      </li>
+      <li class="comments__list">
+        <img class="comments__img" src="/src/assets/images/clients3.png" alt="img">
+        <div class="comments__box">
+          <div class="comments__box--name">
+            <span class="comments__name">Pablo Colling</span>
+            <a class="comments__link" href="#">@reddyzzz</a>
+          </div>
+          <p class="comments__text">I have just needed help from the support and Jose O. that assisted me, he was very
+            helpful and polite and managed to fix my problem quite fast. Very happy with my results so far! </p>
+        </div>
+      </li>
+      <li class="comments__list">
+        <img class="comments__img" src="/src/assets/images/clients4.png" alt="img">
+        <div class="comments__box">
+          <div class="comments__box--name">
+            <span class="comments__name">Tom Smith</span>
+            <a class="comments__link" href="#">@reddyzzz</a>
+          </div>
+          <p class="comments__text">I have just needed help from the support and Jose O. that assisted me, he was very
+            helpful and polite and managed to fix my problem quite fast. Very happy with my results so far! </p>
+        </div>
+      </li>
+      <li class="comments__list">
+        <img class="comments__img" src="/src/assets/images/clients5.png" alt="img">
+        <div class="comments__box">
+          <div class="comments__box--name">
+            <span class="comments__name">Ann Wise</span>
+            <a class="comments__link" href="#">@reddyzzz</a>
+          </div>
+          <p class="comments__text">I have just needed help from the support and Jose O. that assisted me, he was very
+            helpful and polite and managed to fix my problem quite fast. Very happy with my results so far! </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="news">
+    <span class="news__lead lead">Powerful tools</span>
+    <span class="news__title title">Cryptoriance in the news</span>
+    <ul class="news__wrapper">
+      <li class="comments__list news__list">
+        <span class="comments__name news__name">Cryptorio Web App is Here!</span>
+        <p class="comments__text news__text">In this post, we’ll summarize the developments across Cindicator’s products in Q2
+          2021: Сryptorio, the Hybrid Intelligence platform, SuperForecasters, and Macro Sentiment Indicators. Now they
+          can use Сryptorio as a new web app!</p>
+          <span class="news__data">31 July 2021 · News</span>
+          <button class="news__button button__after">Read more</button>
+      </li>
+    </ul>
+  </div>
+  <div class="about">
+    <div class="about__wrapper wrapper">
+      <div class="title about__title">A simple, secure way to buy and sell cryptocurrency</div>
+      <div class="about__text text">Trade bitcoin and other cryptos in 3 minutes.</div>
+      <button class="button about__button button__befor">Get started now <img class="img__arrow"
+          src="assets/svg/arrow.svg" alt=""></button>
+    </div>
+  </div>
+  <div class="footer navigation">
+    <a href="#"><img class="navigation__logo footer__logo" src="/src/assets/images/Logo.png" alt="Logo"></a>
+    <ul class="footer__list list">
+      <li class="footer__item ">
+        <a class="footer__link" href="">Term of Use</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="">Privacy Policy</a>
+      </li>
+      <li class="footer__item footer__data">
+        © 2021 All rights reserved
+      </li>
+    </ul>
+  </div>
+</body>
+
 </html>

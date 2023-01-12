@@ -1,0 +1,27 @@
+@use 'utils' as u;
+
+.main {
+    @include u.flex(center, center, column);
+    &__lead {
+        margin-bottom: 24px;
+    }
+    &__title {
+        margin-bottom: 92px;
+    }
+    &__list {
+        width: 100%;
+        margin-bottom: 40px;
+        @include u.flex(space-around, center, row, wrap);
+    }
+    &__item {
+        max-width: 360px;
+        text-align: center;
+        @include u.flex(center, center, column)
+    }
+    &__img {
+        margin-bottom: 40px;
+    }
+    &__caption {
+        margin-bottom: 30px;
+    }
+}

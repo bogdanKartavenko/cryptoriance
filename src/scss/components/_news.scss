@@ -1,0 +1,36 @@
+@use 'utils' as u;
+
+.news {
+    padding: 100px 65px;
+    @include u.flex(center, center, column);
+
+    &__lead {
+        margin-bottom: 24px;
+    }
+    &__title {
+        margin-bottom: 97px;
+    }
+    &__list {
+        @include u.flex(start,start,column);
+    }
+    &__name {
+        @include u.text(24px, 500, u.$color-white, 140%);
+        margin-bottom: 26px;
+    }
+    &__text {
+        max-width: 280px;
+        margin-bottom: 30px;
+        @include u.text(18px, 400, u.$color-gray1, 160%);
+    }
+    &__data {
+        @include u.text(14px, 400, u.$color-gray, 140%);
+        margin-bottom: 110px;
+    }
+}
+
+@include u.media('desktop', max) {
+    .news {
+        padding: 80px 16px;
+        @include u.flex(start,start,column);
+    }
+}

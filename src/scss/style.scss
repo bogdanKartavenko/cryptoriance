@@ -3,6 +3,24 @@
 @use './config/common';
 
 // Components
-@use './components/title';
+@use './components/text';
 @use './components/cover';
 @use './components/index-page';
+@use './components/header';
+@use './components/nav';
+@use './components/wrapper';
+@use './components/button';
+@use './components/list';
+@use './components/main';
+@use './components/features';
+@use './components/revolution';
+@use './components/promo';
+@use './components/footer';
+@use './components/about';
+@use './components/card';
+@use './components/burger';
+@use './components/gallery';
+@use './components/comments';
+@use './components/clients';
+@use './components/news';
+

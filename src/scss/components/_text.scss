@@ -1,0 +1,42 @@
+@use 'utils'as u;
+
+.title {
+  // text-align: center;
+  // @include utils.text(utils.rem(32px), 700, utils.$color-white);
+  // @include utils.media('tablet') {
+  //   font-size: utils.rem(42px);
+  // }
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  background: linear-gradient(90deg, #FFFFFF -0.06%, #268EEC 100.58%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text {
+  @include u.text(18px, 400, u.$color-gray, 160%);
+}
+
+.lead {
+  @include u.text(16px, 500, u.$color-blue2, 140%);
+}
+
+.caption {
+  @include u.text(24px, 500, u.$color-white, 28px);
+}
+
+.desc {
+  @include u.text(20px, 400, u.$color-gray1, 160%);
+}
+
+.swap {
+  text-decoration: none;
+  @include u.text(18px, 400, u.$color-white, 21px);
+
+}
+
+.card__text {
+  @include u.text(12px, 400, u.$color-gray4, 14px);
+}

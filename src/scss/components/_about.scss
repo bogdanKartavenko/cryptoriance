@@ -1,0 +1,30 @@
+@use 'utils'as u;
+
+.about {
+    background-image: url(/src/assets/images/BG_about.png);
+    padding: 183px 0;
+
+    &__wrapper {
+        @include u.flex(center, center,column);
+        text-align: center;
+    }
+
+    &__title {
+        max-width: 531px;
+        margin-bottom: 32px;
+    }
+
+    &__text {
+        margin-bottom: 50px;
+    }
+    &__button {
+        padding: 0 25px 0 22px;
+    }
+}
+
+@include u.media('desktop', max) {
+    .about__wrapper {
+        @include u.flex(start, start,column);
+        text-align: start;
+    }
+}

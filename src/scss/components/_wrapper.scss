@@ -1,0 +1,15 @@
+@use 'utils' as u;
+
+.wrapper {
+    max-width: 1278px;
+    width: 100%;
+    padding: 0 16px;
+    @include u.margin-auto()
+}
+
+.box {
+    position: relative;
+    z-index: 5;
+    max-width: 500px;
+    width: 100%;
+}
