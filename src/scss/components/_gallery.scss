@@ -94,6 +94,9 @@
         }
 
         &__box {
+            width: 96px;
+            height: 48px;
+            padding: 8px 12px;
             margin: 0 auto;
 
             &:nth-child(1) {
@@ -103,6 +106,13 @@
             &:nth-child(3) {
                 margin-right: 0;
             }
+        }
+
+        &__border {
+            position: relative;
+            width: 96px;
+            left: -12px;
+            bottom: 0;
         }
 
         &__label {
