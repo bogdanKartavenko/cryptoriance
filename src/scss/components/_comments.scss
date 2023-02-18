@@ -4,15 +4,13 @@
     @include u.flex(space-between, center);
 
     &__list {
+        min-width: 392px;
+        min-height: 245px;
         padding: 28px;
         border-radius: 8px;
         background-color: u.$color-gray2;
         display: flex;
-
-        &:nth-child(4),
-        &:nth-child(5) {
-            display: none;
-        }
+        margin-right: 30px;
     }
 
     &__img {
@@ -24,17 +22,21 @@
     &__box {
         min-height: 156px;
     }
+
     &__box--name {
         margin-bottom: 12px;
     }
+
     &__name {
         @include u.text(18px, 500, u.$color-white, 21px);
         margin-right: 8px;
     }
+
     &__link {
         @include u.text(18px, 400, u.$color-blue3, 21px);
         text-decoration: none;
     }
+
     &__text {
         @include u.text(16px, 400, u.$color-gray1, 160%);
         max-width: 280px;
@@ -42,10 +44,24 @@
 }
 
 @include u.media('desktop', max) {
-    .comments__list:nth-child(2),
-    .comments__list:nth-child(3),
-    .comments__list:nth-child(4),
-    .comments__list:nth-child(5) {
-        display: none;
+
+    .comments {
+        &__list {
+            min-width: 327px;
+            min-height: 318px;
+            margin-right: 18px;
+        }
+
+        &__name {
+            @include u.text(18px, 500, u.$color-white, 21px);
+        }
+
+        &__link {
+            @include u.text(18px, 400, u.$color-blue3, 21px);
+        }
+
+        &__text {
+            @include u.text(16px, 400, u.$color-gray1, 160%);
+        }
     }
 }

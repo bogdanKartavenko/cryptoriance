@@ -1,14 +1,21 @@
 @use 'utils'as u;
 
 .clients {
-    padding: 100px 64px;
+    padding: 100px 0 100px 64px;
+
     &__title {
         font-weight: 500;
         font-size: 36px;
         line-height: 140%;
     }
+
     &__wrapper {
         margin-top: 56px;
+        overflow-x: auto;
+        width: 100%;
+        &::-webkit-scrollbar {
+            height: 0;
+        }
     }
 }
 
