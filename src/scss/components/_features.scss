@@ -1,0 +1,43 @@
+@use 'utils'as u;
+
+.features {
+    padding: 134px 0 40px;
+
+    &__wrapper {
+        @include u.flex(space-between, center, row, wrap);
+    }
+
+    &__box {
+        max-width: 498px;
+        width: 100%;
+    }
+
+    &__title {
+        margin-bottom: 32px;
+    }
+
+    &__desc {
+        max-width: 392px;
+        width: 100%;
+        margin-bottom: 43px;
+    }
+
+    &__arrow {
+        margin: 0 0 3px 7px;
+    }
+
+    &__img {
+        max-height: 384px
+    }
+}
+
+@include u.media('desktop', max) {
+    .features {
+        @include u.flex(space-between, center, row, wrap);
+
+        &__img {
+            margin-top: 84px;
+            max-width: 340px;
+        }
+    }
+}

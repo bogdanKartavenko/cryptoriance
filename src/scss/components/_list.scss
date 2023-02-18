@@ -1,0 +1,11 @@
+@use 'utils' as u;
+
+.list {
+    @include u.flex(space-between, stretch, row, wrap);
+    &__item {
+        @include u.flex(center, center, column)
+    }
+    &__item {
+        margin: 0 10px;
+    }
+}

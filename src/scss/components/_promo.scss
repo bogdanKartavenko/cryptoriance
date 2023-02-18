@@ -1,0 +1,28 @@
+@use 'utils' as u;
+
+.promo {
+    padding: 141px 0 100px;
+    &__wrapper {
+    @include u.flex(space-between, center, row, wrap);
+    }
+    &__box {
+        margin-bottom: 60px;
+    }
+    &__title {
+        margin-bottom: 32px;
+    }
+    &__desc {
+        max-width: 392px;
+        margin-bottom: 43px;
+    }
+    &__img {
+        max-height: 500px;
+    }
+}
+
+@include u.media('desktop', max) {
+    .promo__img {
+        margin: 0 auto;
+        max-width: 287px;
+    }
+}

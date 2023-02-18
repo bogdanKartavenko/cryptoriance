@@ -1,0 +1,123 @@
+@use 'utils'as u;
+
+.gallery {
+    padding: 100px 0;
+    @include u.flex (center, center, column);
+
+    &__lead {
+        margin-bottom: 24px;
+    }
+
+    &__title {
+        margin-bottom: 32px;
+    }
+
+    &__text {
+        text-align: center;
+        max-width: 604px;
+        margin-bottom: 69px;
+    }
+
+    &__form {
+        @include u.flex(space-between, center);
+        max-width: 816px;
+        width: 100%;
+        border-bottom: 1px solid u.$color-gray5;
+        margin-bottom: 24px;
+    }
+
+    &__box {
+        position: relative;
+        padding-bottom: 24px;
+
+        &:nth-child(1) {
+            margin-left: 120px;
+        }
+
+        &:nth-child(3) {
+            margin-right: 120px;
+        }
+    }
+
+    &__label {
+        @include u.text(20px, 500, u.$color-white, 24px);
+        cursor: pointer;
+    }
+
+    &__radio {
+        display: none;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__border {
+        position: absolute;
+        bottom: 0;
+        opacity: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(91.27deg, #618DFF 0%, #05D7E4 100%);
+        border-radius: 2px;
+    }
+}
+
+.gallery__radio:checked+.gallery__border {
+    opacity: 10;
+}
+
+@include u.media('desktop', max) {
+    .gallery {
+        padding: 80px 0;
+        @include u.flex (start, start, column);
+
+        &__lead {
+            padding: 0 16px;
+        }
+
+        &__title {
+            padding: 0 16px;
+            margin-bottom: 24px;
+        }
+
+        &__text {
+            text-align: start;
+            padding: 0 16px;
+            margin-bottom: 47px;
+        }
+
+        &__form {
+            padding: 0 16px;
+            border-bottom: none;
+        }
+
+        &__box {
+            width: 96px;
+            height: 48px;
+            padding: 8px 12px;
+            margin: 0 auto;
+
+            &:nth-child(1) {
+                margin-left: 0;
+            }
+
+            &:nth-child(3) {
+                margin-right: 0;
+            }
+        }
+
+        &__border {
+            position: relative;
+            width: 96px;
+            left: -12px;
+            bottom: 0;
+        }
+
+        &__label {
+            @include u.text (16px, 700, u.$color-white, 19px);
+            max-width: 72px;
+        }
+    }
+}
